@@ -42,6 +42,9 @@ public class Arvore {
 				a.e = new Arvore(num,contaNivel);
 				contaNivel=0;
 			}
+		}else if(a.num == num){
+			System.out.println("\n Número já existente na árvore no nível" + a.nivel);
+			return null;
 		}
 		
 		return a;
