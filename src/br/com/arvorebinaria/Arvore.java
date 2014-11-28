@@ -91,7 +91,6 @@ public class Arvore {
                 	b.d.nivel--;
                     b = b.d;
                 }
-                System.out.println("");
                 a.num = b.num;
                 b.num = num;
                 a.e = delete(a.e, num);

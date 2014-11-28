@@ -13,8 +13,8 @@ public class Interface {
 		System.out.println("[3] Exibir maior");
 		System.out.println("[4] Exibir menor");
 		System.out.println("[5] Excluir número");
-		System.out.println("[5] Excluir tudo");
-		System.out.println("[6] Sair\n");
+		System.out.println("[6] Excluir tudo");
+		System.out.println("[7] Sair\n");
 	}
 	private static int getValor(){
 		boolean n = false;
@@ -49,7 +49,7 @@ public class Interface {
 			
 			switch(t){
 				case 1:
-					/*System.out.println("Digite o valor para inserir: ");
+					System.out.println("Digite o valor para inserir: ");
 					tmp = getValor();
 					
 					if(raiz == null){
@@ -58,9 +58,8 @@ public class Interface {
 					}else{
 						raiz = Arvore.add(raiz,tmp);
 					}
-					*/
 					
-					raiz = new Arvore(100);
+					/*raiz = new Arvore(100);
 					raiz = Arvore.add(raiz,50);
 					raiz = Arvore.add(raiz,75);
 					raiz = Arvore.add(raiz,80);
@@ -70,6 +69,7 @@ public class Interface {
 					raiz = Arvore.add(raiz,120);
 					raiz = Arvore.add(raiz,130);
 					raiz = Arvore.add(raiz,110);
+					*/
 					
 					Arvore.print(raiz);
 					
@@ -101,11 +101,9 @@ public class Interface {
 					raiz = null;
 					System.out.println("Árvore removida");
 				break;
-				
-			
 			}
 			
-		}while(t>0 && t<6);
+		}while(t>0 && t<7);
 		
 		
 		System.out.println("** Fim Árvore binária **");
