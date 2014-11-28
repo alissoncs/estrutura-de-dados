@@ -56,6 +56,12 @@ public class Interface {
 					Arvore.print(raiz);
 					
 				break;
+				
+				case 2:
+					Arvore.print(raiz);
+				break;
+				
+				
 			
 			}
 			

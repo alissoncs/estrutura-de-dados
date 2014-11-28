@@ -57,5 +57,10 @@ public class Arvore {
 		}
 	}
 	
+	public static void delete(Arvore a, int num){
+		
+		
+		
+	}
 	
 }
