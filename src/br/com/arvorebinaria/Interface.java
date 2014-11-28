@@ -8,10 +8,12 @@ public class Interface {
 	
 	private static void menu(){
 		
-		System.out.println("[1] Inserir");
+		System.out.println("\n\n[1] Inserir");
 		System.out.println("[2] Exibir");
-		System.out.println("[3]");
-		System.out.println("[4] Sair");
+		System.out.println("[3] Exibir maior");
+		System.out.println("[4] Exibir menor");
+		System.out.println("[5] Excluir número");
+		System.out.println("[6] Sair\n");
 	}
 	private static int getValor(){
 		return Integer.parseInt(scanner.nextLine());
@@ -57,7 +59,7 @@ public class Interface {
 			
 			}
 			
-		}while(t>0 && t<4);
+		}while(t>0 && t<6);
 		
 		
 		System.out.println("** Fim Árvore binária **");

@@ -22,7 +22,12 @@ public class Arvore {
 	public static Arvore add(Arvore a, int num){
 		
 		contaNivel++;
-
+		
+		// Caso exceda o limite da árvore
+		if(contaNivel >= limite){
+			System.out.println("\nLimite excedido no item "+num+"\n");
+			return null;
+		}
 		
 		if(a.num < num) {
 			if(a.d != null) add(a.d,num);
