@@ -91,7 +91,7 @@ public class Arvore {
                 	b.d.nivel--;
                     b = b.d;
                 }
-                //System.out.println("");
+                System.out.println("");
                 a.num = b.num;
                 b.num = num;
                 a.e = delete(a.e, num);
@@ -102,6 +102,21 @@ public class Arvore {
 		return a;
 		
 	}
+	
+	public static void maior(Arvore a){
+        if (a.d == null) {
+            System.out.println(a.num);
+        } else {
+        	maior(a.d);
+        }
+    }
+	public static void menor(Arvore a){
+        if (a.e == null) {
+            System.out.println(a.num);
+        } else {
+        	menor(a.e);
+        }
+    }
 	
 	
 }

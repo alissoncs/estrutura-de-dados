@@ -13,6 +13,7 @@ public class Interface {
 		System.out.println("[3] Exibir maior");
 		System.out.println("[4] Exibir menor");
 		System.out.println("[5] Excluir número");
+		System.out.println("[5] Excluir tudo");
 		System.out.println("[6] Sair\n");
 	}
 	private static int getValor(){
@@ -60,15 +61,15 @@ public class Interface {
 					*/
 					
 					raiz = new Arvore(100);
-					raiz.add(raiz,50);
-					raiz.add(raiz,75);
-					raiz.add(raiz,80);
-					raiz.add(raiz,60);
-					raiz.add(raiz,25);
-					raiz.add(raiz,12);
-					raiz.add(raiz,120);
-					raiz.add(raiz,130);
-					raiz.add(raiz,110);
+					raiz = Arvore.add(raiz,50);
+					raiz = Arvore.add(raiz,75);
+					raiz = Arvore.add(raiz,80);
+					raiz = Arvore.add(raiz,60);
+					raiz = Arvore.add(raiz,25);
+					raiz = Arvore.add(raiz,12);
+					raiz = Arvore.add(raiz,120);
+					raiz = Arvore.add(raiz,130);
+					raiz = Arvore.add(raiz,110);
 					
 					Arvore.print(raiz);
 					
@@ -80,11 +81,25 @@ public class Interface {
 				break;
 				
 				case 3:
+					System.out.println("Valor maior: ");
+					Arvore.maior(raiz);
+				break;
+				
+				case 4:
+					System.out.println("Valor menor: ");
+					Arvore.menor(raiz);
+				break;
+				
+				case 5:
 					System.out.println("Digite o valor para excluir: ");
 					tmp = getValor();
 					
 					raiz = Arvore.delete(raiz,tmp);
 					
+				break;
+				case 6:
+					raiz = null;
+					System.out.println("Árvore removida");
 				break;
 				
 			
