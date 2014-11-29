@@ -4,5 +4,7 @@ EstruturaDeDados
 Estruturas de dados em Java
 
 - Árvore Binária
-      Inserção, exclusão, listagem.
-      Níveis, limitadores, número maior e menor
+      <ul>
+      <li>Inserção, exclusão, listagem.</li>
+      <li>Níveis, limitadores, número maior e menor</li>
+</ul>
