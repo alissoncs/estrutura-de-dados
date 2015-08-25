@@ -19,3 +19,9 @@ Estruturas de dados em Java
 <ul>
 	<li>Implementação da pilha para gerenciamento do estacionamento de automóveis em uma rua estreita</li>
 </ul>
+
+- <strong>Sequencia de Fibonacci</strong>
+<ul>
+	<li>Implementação de um <i>loop</i> para exibição da sequência de Fibonacci</li>
+	<li>Exibindo o número de iterações necessárias para alcançar a sequência</li>
+</ul>
